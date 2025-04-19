@@ -7,44 +7,43 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="styling.css">    
 </head>
 <body style="background-color: black;color: #F1F1F1;">
     <!--Navbar-->
     
     <nav class="navbar navbar-expand-sm navbar-dark m-4">
-        <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-between">
             <div>
-                <a href="" class="navbar-brand fw-bolder fs-4">Pay <span style="color: #C9F300;">Card</span></a>
+                <a href="#home" class="text-white fw-bolder fs-4 text-decoration-none">Pay <span style="color: #C9F300;">Card</span></a>
             </div>
-            <div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse  d-flex justify-content-end" id="mynavbar">
+            <button class="navbar-toggler  d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="mynavbar">
                 <ul class="navbar-nav fw-bold">
                     <li class="nav-item mx-3">
-                        <a href="" class="nav-link">HOME</a>
+                        <a href="#home" class="nav-link" style="color: #C9F300;">HOME</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a href="" class="nav-link">SERVICE</a>
+                        <a href="#plans" class="nav-link">SERVICE</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a href="" class="nav-link">EXPLORE</a>
+                        <a href="#explore" class="nav-link">EXPLORE</a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a href="" class="nav-link">CONTECT</a>
+                        <a href="#contect" class="nav-link">CONTECT</a>
                     </li>
                 </ul>
-                            <button class="btn" style="background-color: transparent; border: 1px solid white; color: #C9F300;">EXPLORE</button>
             </div>
+            <span class="collapse navbar-collapse d-lg-flex justify-content-end" id="mynavbar">
+                <button class="btn" style="background-color: transparent; border: 1px solid white;"><a class="text-decoration-none" href="#explore" style=" color: #C9F300;" >EXPLORE</a></button>
+            </span>
         </div>
     </nav>
 
-    <!--Hero Section-->
+    <!--Hero Section 1-->
 
-    <div class="container container-fluid m-5">
+    <div class="container mt-5" id="home">
         <div class="row">
             <div class="col-lg-6 col-sm-12 d-flex flex-column justify-content-end">
                 <div class="d-flex"> 
@@ -91,13 +90,13 @@
                 </div>
             </div>
             <div class="col-lg-6 col-sm-12">
-                <div class="d-flex justify-content-end">
-                    <img src="card_pic.png" class="w-75" alt="">
+                <div class="d-flex justify-content-center">
+                    <img src="card_pic.png" class="w-75" alt="card pic">
                 </div>
             </div>
         </div>
     </div>
-    <!--Section card-->
+    <!--Section card 2-->
     <div class="mt-5 mb-5">
         <div>
             <div>
@@ -107,14 +106,15 @@
                     </div>
                     <p style="color: #C9F300;" class="ms-2">A"Show/Hide" button to toggle the visibility.</p>
                 </div>
-                <div  class="d-flex justify-content-center">
-                    <p class="h1">Display sensitive information, like card <br> numbers, in a blurred or scrambled format.</p>
+                <div  class="d-flex flex-column text-center">
+                    <p class="h1">Display sensitive information, like card numbers,</p>
+                    <p class="h1"> in a blurred or scrambled format.</p>
                 </div>
             </div>
             <!--cards boxs-->
             <div class="">
-                <div class="row d-flex justify-content-around mt-5">
-                    <div class="card col-lg-3 " style="width:300px; background-color: #141413;      color: #F1F1F1;">
+                <div class="row d-flex justify-content-center mt-5 ">
+                    <div class="card col-lg-3 col-sm-12 col-md-6 col-xl-3 mb-3 me-3" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                         <div class="d-flex justify-content-center mt-4 fs-4">
                            <i class="fa-solid fa-infinity" style="color: #C9F300;" ></i>
                         </div>
@@ -123,7 +123,7 @@
                           <p class="card-text text-center text-secondary">Make "Lifetime Access" stand out <br> for a lifetime. Never worry about <br> expiration dates or subscription <br> renewals.</p>
                         </div>
                     </div>
-                    <div class="card col-lg-3" style="width:300px; background-color: #141413;      color: #F1F1F1;">
+                    <div class="card col-lg-3 col-sm-12 col-md-6 col-xl-3 mb-3 me-3" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                         <div class="d-flex justify-content-center mt-4 fs-4">
                             <i class="fa-brands fa-searchengin" style="color: #C9F300;" ></i>
                         </div>
@@ -132,7 +132,7 @@
                           <p class="card-text text-center text-secondary">Make "Lifetime Access" stand out <br> for a lifetime. Never worry about <br> expiration dates or subscription <br> renewals.</p>
                         </div>
                     </div>
-                    <div class="card col-lg-3" style="width:300px; background-color: #141413;      color: #F1F1F1;">
+                    <div class="card col-lg-3 col-sm-12 col-md-6 col-xl-3 mb-3 me-3" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                         <div class="d-flex justify-content-center mt-4 fs-4">
                             <i class="fa-regular fa-bell" style="color: #C9F300;" ></i>
                         </div>
@@ -141,7 +141,7 @@
                           <p class="card-text text-center text-secondary">Make "Lifetime Access" stand out <br> for a lifetime. Never worry about <br> expiration dates or subscription <br> renewals.</p>
                         </div>
                     </div>
-                    <div class="card col-lg-3" style="width:300px; background-color: #141413;      color: #F1F1F1;">
+                    <div class="card col-lg-3 col-sm-12 col-md-6 col-xl-3 mb-3 me-3" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                         <div class="d-flex justify-content-center mt-4 fs-4">
                             <i class="fa-regular fa-bookmark" style="color: #C9F300;" ></i>
                         </div>
@@ -154,7 +154,7 @@
             </div>
         </div>
     </div>
-    <!--Section 2-->
+    <!--Section 3-->
     <section class="d-flex flex-column justify-content-center" style="background-image: url(section\ 2\ background.png); width: 100%; height: 100vh; background-size: cover; background-repeat: no-repeat;">
         <div class="mt-5 row">
             <div class="mt-5 col-12">
@@ -164,14 +164,15 @@
                     </div>
                     <p style="color: #C9F300;" class="ms-2">A"Show/Hide" button to toggle the visibility.</p>
                 </div>
-                <div  class="d-flex justify-content-center">
-                    <p class="h1">"Lifetime membership to best subscription <br> services at no extra cost."</p>
+                <div  class="mb-3 text-center">
+                    <p class="h1">"Lifetime membership to best subscription"</p>
+                    <p class="h1"> services at no extra cost.</p>
                 </div>
                 <div class="d-flex justify-content-center">
                     <p class="text-secondary">Claim your lifetime access now and save hours of searching programs.</p>
                 </div>
                 <div class="d-flex justify-content-center mt-5">
-                    <button class="btn btn-outline-light w-25 fw-bold" style="background-color: #C9F300; color: black;">
+                    <button class="btn btn-outline-light fw-bold" style="background-color: #C9F300; color: black;">
                         Exclusive Membership Plan
                         <i class="fa-regular fa-star"></i>
                     </button>
@@ -187,27 +188,27 @@
         </div>
     </section>
     <!--Section 4-->
-    <section>
-        <div class="d-flex justify-content-center mt-5 mb-5 row">
-            <div class="d-flex justify-content-around fw-bold w-75 rounded-4 col-sm-12 col-lg-12 col-md-12" style="background-color: #141413;height: 3rem;">
-                <div class="d-flex align-items-center">
+    <section class="mt-5 mb-5" id="plans">
+        <div class="d-flex justify-content-around container">
+            <div class=" fw-bold w-100 rounded-4 row p-3" style="background-color: #141413;">
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex ">
                     <div>
                         <i class="fa-solid fa-infinity me-2" style="color: #C9F300;" ></i>
                     </div>
-                    <div>Lifetime access to all programs</div>
+                    <div>Lifetime access</div>
                 </div>
-                <div class="d-flex align-items-center">
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex ">
                     <div>
                         <i class="fa-brands fa-searchengin me-2" style="color: #C9F300;" ></i>                   
                     </div>
                     <div> Search & filter</div>
                 </div>
-                <div class="d-flex align-items-center">
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex ">
                     <div>
                         <i class="fa-regular fa-bookmark me-2" style="color: #C9F300;" ></i>                    </div>
                     <div> Access to "Bookmark" page</div>
                 </div>
-                <div class="d-flex align-items-center">
+                <div class="col-sm-12 col-md-6 col-lg-3 d-flex ">
                     <div>
                         <i class="fa-regular fa-bell me-2" style="color: #C9F300;" ></i>
                     </div>
@@ -215,7 +216,6 @@
                 </div>
             </div>
         </div>
-        <!-- cards-->
         <div class="row m-5">
             <!-- card 1-->
             <div class="col-lg-4 col-sm-12 d-flex justify-content-center">
@@ -310,8 +310,8 @@
             </div>
         </div>
     </section>
-    <!--Section 4-->
-    <section>
+    <!--Section 6-->
+    <section id="explore">
         <div>
             <div class="text-center">
                 <div style="color: #C9F300;">
@@ -328,8 +328,9 @@
                 </div>
             </div>
             <div>
-               <div class="row d-flex justify-content-center mt-5 mb-5">
-                    <div class="col-lg-3 col-sm-12 col-md-4 col-xl-3">
+                <!--Row 1 Card-4 -->
+               <div class="row d-flex mt-5 mb-5">
+                    <div class="col-lg-3 col-sm-12 col-md-6 col-xl-3 d-flex justify-content-center mb-3">
                         <div class="card" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                             <div class="card-header d-flex justify-content-center mt-4 fs-4">
                                 <i class="fa-regular fa-bell" style="color: #C9F300;" ></i>
@@ -342,7 +343,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-xl-3">
+                    <div class="col-lg-3 col-sm-6 col-xl-3 d-flex justify-content-center mb-3">
                         <div class="card" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                             <div class="card-header d-flex justify-content-center mt-4 fs-4">
                                 <i class="fa-solid fa-wand-magic-sparkles" style="color: #C9F300;" ></i>
@@ -355,7 +356,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-xl-3">
+                    <div class="col-lg-3 col-sm-6 col-xl-3 d-flex justify-content-center mb-3">
                         <div class="card" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                             <div class="card-header d-flex justify-content-center mt-4 fs-4">
                                 <i class="fa-solid fa-wallet" style="color: #C9F300;" ></i>
@@ -368,7 +369,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-xl-3">
+                    <div class="col-lg-3 col-sm-6 col-xl-3 d-flex justify-content-center mb-3">
                         <div class="card" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                             <div class="card-header d-flex justify-content-center mt-4 fs-4">
                                 <i class="fa-solid fa-earth-americas" style="color: #C9F300;" ></i>
@@ -382,8 +383,10 @@
                         </div>
                     </div>
                 </div>
+                <!-- row 2 card-4 -->
+
                 <div class="row d-flex justify-content-center mt-5 mb-5">
-                    <div class="col-lg-3 col-sm-6 col-xl-3">
+                    <div class="col-lg-3 col-sm-6 col-xl-3 d-flex justify-content-center mb-3">
                         <div class="card" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                             <div class="card-header d-flex justify-content-center mt-4 fs-4">
                                 <i class="fa-solid fa-briefcase" style="color: #C9F300;" ></i>
@@ -396,7 +399,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-xl-3">
+                    <div class="col-lg-3 col-sm-6 col-xl-3 d-flex justify-content-center mb-3">
                         <div class="card" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                             <div class="card-header d-flex justify-content-center mt-4 fs-4">
                                 <i class="fa-solid fa-hospital" style="color: #C9F300;" ></i>
@@ -409,7 +412,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-xl-3">
+                    <div class="col-lg-3 col-sm-6 col-xl-3 d-flex justify-content-center mb-3">
                         <div class="card" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                             <div class="card-header d-flex justify-content-center mt-4 fs-4">
                                 <i class="fa-solid fa-money-check-dollar" style="color: #C9F300;" ></i>
@@ -422,7 +425,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-xl-3">
+                    <div class="col-lg-3 col-sm-6 col-xl-3 d-flex justify-content-center mb-3">
                         <div class="card" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                             <div class="card-header d-flex justify-content-center mt-4 fs-4">
                                 <i class="fa-solid fa-book-open" style="color: #C9F300;" ></i>
@@ -436,8 +439,10 @@
                         </div>
                     </div>
                 </div>
+                <!-- row 3 cards-4 -->
+
                 <div class="row d-flex justify-content-center mt-5 mb-5">
-                    <div class="col-lg-3 col-sm-6 col-xl-3">
+                    <div class="col-lg-3 col-sm-6 col-xl-3 d-flex justify-content-center mb-3">
                         <div class="card" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                             <div class="card-header d-flex justify-content-center mt-4 fs-4">
                                 <i class="fa-solid fa-bullhorn" style="color: #C9F300;" ></i>
@@ -450,7 +455,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-xl-3">
+                    <div class="col-lg-3 col-sm-6 col-xl-3 d-flex justify-content-center mb-3">
                         <div class="card" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                             <div class="card-header d-flex justify-content-center mt-4 fs-4">
                                 <i class="fa-regular fa-face-smile-beam" style="color: #C9F300;" ></i>
@@ -463,7 +468,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-xl-3">
+                    <div class="col-lg-3 col-sm-6 col-xl-3 d-flex justify-content-center mb-3">
                         <div class="card" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                             <div class="card-header d-flex justify-content-center mt-4 fs-4">
                                 <i class="fa-solid fa-credit-card" style="color: #C9F300;" ></i>
@@ -476,7 +481,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-xl-3">
+                    <div class="col-lg-3 col-sm-6 col-xl-3 d-flex justify-content-center mb-3">
                         <div class="card" style="width:300px; background-color: #141413;      color: #F1F1F1;">
                             <div class="card-header d-flex justify-content-center mt-4 fs-4">
                                 <i class="fa-solid fa-money-bill-wave" style="color: #C9F300;" ></i>
@@ -494,8 +499,10 @@
         </div>
     </section>
     <hr class="mt-5 mb-5">
-    <footer class="row">
-        <div class="col-lg-6 col-sm-12 mb-5 ps-5">
+    <!-- Footer contect form  -->
+
+    <footer class="row" id="contect">
+        <div class="col-lg-6 col-sm-12 col-md-12 mb-5 ps-5">
             <div class="fw-bolder" style="font-size: 2.5rem;">
                 Pay <span style="color: #C9F300;">Card</span>
             </div>
@@ -514,7 +521,7 @@
                 </span>
             </div>
             <div class="mt-5 d-flex w-50 rounded-4 p-2" style="background-color: #221D21;">
-                <span class="bg-light text-secondary p-2 rounded-circle"> ">
+                <span class="bg-light text-secondary p-2 rounded-circle">
                     <i class="fab fa-paypal"></i>
                 </span>
                 <span class="fw-bolder ms-2">Paypal <br> Card</span>
